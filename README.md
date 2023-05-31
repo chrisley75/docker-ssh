@@ -3,6 +3,7 @@
 This Dockerfile creates an ssh service inside a docker container
 
 * default user and password is ubuntu
+* I've edited the SSH conf from Dockerfile, so that the SSH server listens on port 2222 (default is 22)
 
 
 ## Building the image
@@ -12,7 +13,7 @@ This Dockerfile creates an ssh service inside a docker container
 
 ## Runing the image 
 
-` docker run -p 22:22 IMAGE_NAME `
+` docker run -p 2222:2222 IMAGE_NAME `
 
 
 ## Or simply pull the image 

@@ -15,10 +15,10 @@ spec:
     app: docker-ssh
   spec:
    containers:
-   - image: chrisley75/docker-ssh:0.0.1
+   - image: chrisley75/docker-ssh:0.0.2
      name: docker-ssh
      ports:
-     - containerPort: 22
+     - containerPort: 2222
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
    app: docker-ssh
  ports:
  - port: 2222
-   targetPort: 22
+   targetPort: 2222
    name: ssh
    protocol: TCP
